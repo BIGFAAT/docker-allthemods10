@@ -1,8 +1,13 @@
+https://www.curseforge.com/api/v1/mods/925200/files/5898 752/download
+
+
+
+
 #!/bin/bash
 
 set -x
 
-NEOFORGE_VERSION=21.1.73
+NEOFORGE_VERSION=21.1.77
 cd /data
 
 if ! [[ "$EULA" = "false" ]]; then
@@ -12,10 +17,10 @@ else
 	exit 99
 fi
 
-if ! [[ -f 'Server-Files-1.16.0.zip' ]]; then
+if ! [[ -f 'Server-Files-1.19.0.zip' ]]; then
 	rm -fr config defaultconfigs kubejs mods packmenu Simple.zip forge*
-	curl -Lo 'Server-Files-1.16.0.zip' 'https://edge.forgecdn.net/files/5873/667/Server-Files-1.16.zip' || exit 9
-	unzip -u -o 'Server-Files-1.16.0.zip' -d /data
+	curl -Lo 'Server-Files-1.19.0.zip' 'https://edge.forgecdn.net/files/5898/752/Server-Files-1.19.zip' || exit 9
+	unzip -u -o 'Server-Files-1.19.0.zip' -d /data
 	DIR_TEST=$(find . -type d -maxdepth 1 | tail -1 | sed 's/^.\{2\}//g')
 	if [[ $(find . -type d -maxdepth 1 | wc -l) -gt 1 ]]; then
 		cd "${DIR_TEST}"
