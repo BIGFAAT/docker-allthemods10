@@ -1,5 +1,4 @@
-# [All the Mods 10-1.15.0]](https://www.curseforge.com/minecraft/modpacks/all-the-mods-10)) on Curseforge
-
+# [All the Mods 10-1.19.0](https://www.curseforge.com/minecraft/modpacks/all-the-mods-10) on Curseforge
 <!-- toc -->
 
 - [Description](#description)
