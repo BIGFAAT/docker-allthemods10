@@ -1,8 +1,3 @@
-https://www.curseforge.com/api/v1/mods/925200/files/5898 752/download
-
-
-
-
 #!/bin/bash
 
 set -x
