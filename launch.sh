@@ -1,8 +1,11 @@
+https://www.curseforge.com/minecraft/modpacks/all-the-mods-10/download/5929 640
+
+
 #!/bin/bash
 
 set -x
 
-NEOFORGE_VERSION=21.1.79
+NEOFORGE_VERSION=21.1.80
 cd /data
 
 if ! [[ "$EULA" = "false" ]]; then
@@ -12,10 +15,10 @@ else
 	exit 99
 fi
 
-if ! [[ -f 'Server-Files-1.22.0.zip' ]]; then
+if ! [[ -f 'Server-Files-1.23.0.zip' ]]; then
 	rm -fr config defaultconfigs kubejs mods packmenu Simple.zip forge*
-	curl -Lo 'Server-Files-1.22.0.zip' 'https://edge.forgecdn.net/files/5917/685/Server-Files-1.22.zip' || exit 9
-	unzip -u -o 'Server-Files-1.22.0.zip' -d /data
+	curl -Lo 'Server-Files-1.23.0.zip' 'https://edge.forgecdn.net/files/5929/640/Server-Files-1.23.zip' || exit 9
+	unzip -u -o 'Server-Files-1.23.0.zip' -d /data
 	DIR_TEST=$(find . -type d -maxdepth 1 | tail -1 | sed 's/^.\{2\}//g')
 	if [[ $(find . -type d -maxdepth 1 | wc -l) -gt 1 ]]; then
 		cd "${DIR_TEST}"
