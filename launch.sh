@@ -1,4 +1,4 @@
-https://www.curseforge.com/minecraft/modpacks/all-the-mods-10/download/5929 640
+https://www.curseforge.com/minecraft/modpacks/all-the-mods-10/download/5929640
 
 
 #!/bin/bash
